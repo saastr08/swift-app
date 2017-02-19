@@ -9,10 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var entrylabel: UILabel!
+    
+    
+    @IBAction func entrybutton(_ sender: Any) {
+        
+        if entrylabel.text == "Ping" {entrylabel.text = "Pong"} else {entrylabel.text = "Ping"}
+        
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
