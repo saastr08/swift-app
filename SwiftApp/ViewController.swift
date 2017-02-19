@@ -13,15 +13,18 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var entrylabel: UILabel!
+  
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     
     @IBAction func entrybutton(_ sender: Any) {
-        
-        if entrylabel.text == "Ping" {entrylabel.text = "Pong"} else {entrylabel.text = "Ping"}
-        
-        
+    
+        entrylabel.text = "Answer is...\(Double(text1.text!)! + Double(text2.text!)!)"
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
